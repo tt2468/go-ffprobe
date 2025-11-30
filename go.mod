@@ -1,3 +1,3 @@
-module gopkg.in/vansante/go-ffprobe.v2
+module go-ffprobe
 
 go 1.13
