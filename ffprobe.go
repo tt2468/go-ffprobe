@@ -24,6 +24,7 @@ func ProbeURL(ctx context.Context, fileURL string, extraFFProbeOptions ...string
 	args := append([]string{
 		"-loglevel", "fatal",
 		"-print_format", "json",
+		"-show_programs",
 		"-show_format",
 		"-show_streams",
 		"-show_chapters",
@@ -46,6 +47,7 @@ func ProbeReader(ctx context.Context, reader io.Reader, extraFFProbeOptions ...s
 	args := append([]string{
 		"-loglevel", "fatal",
 		"-print_format", "json",
+		"-show_programs",
 		"-show_format",
 		"-show_streams",
 		"-show_chapters",
